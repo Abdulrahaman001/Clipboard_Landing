@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h3,
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container {
+    max-width: 1500px;
+    padding-inline: 200px;
+}
+
+header {
+    position: relative;
+    /* padding-block: 50px; */
+    text-align: center;
+}
+
+.img1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+}
+
+header h1 {
+    font-size: 45px;
+    padding-block: 25px;
+}
+
+header button {
+    margin-top: 35px;
+    margin-bottom: 70px;
+
+}
+
+header button:nth-child(1) {
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding-inline: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header button:nth-child(2) {
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding-inline: 40px;
+    cursor: pointer;
+}
+
+header .container {
+    padding-top: 100px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding-block: 50px;
+    padding-top: 90px;
+}
+
+.main img {
+    margin-left: -40px;
+}
+
+.main p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.access {
+    text-align: center;
+    padding-block: 50px;
+}
+
+.access p {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.source .container {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+    text-align: center;
+    max-width: 2000px;
+    padding-bottom: 50px;
+}
+
+.source h2 {
+    padding-block: 50px;
+}
+
+.vector {
+    padding-block: 100px;
+}
+
+.vector .container {
+    /* max-width: 2000px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app p {
+    padding-block: 40px;
+}
+
+.app button {
+    margin-bottom: 20px;
+}
+
+.app button:nth-child(1) {
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding-inline: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.app button:nth-child(2) {
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding-inline: 40px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: hsla(201, 11%, 66%, 0.2);
+    /* margin-top: 100px; */
+    /* gap: 200px; */
+    padding: 90px;
+    width: 100%;
+}
+
+.logo {
+    height: 10px;
+    width: 10px;
+}
+
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 100%; */
+}
+
+footer div p {
+    padding-bottom: 10px;
+}
+
+.first {
+    display: flex;
+    gap: 50px;
+    
+}
+
+.second {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        padding-inline: 7vw;
+    }
+
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu {
+        padding-top: 100px;
+    }
+
+    header button {
+        margin: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .main img:nth-child(1) {
+        padding-inline: 80PX;
+        max-width: 100%;
+    }
+
+    .main .container {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .acces {
+        flex-direction: column;
+    }
+
+    .access img {
+        max-width: 100%;
+        /* padding-inline: 7vw; */
+        padding-bottom: 70px;
+    }
+
+    .source .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .vector .container {
+        flex-direction: column;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .app {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .app button {
+        max-width: 100%;
+    }
+
+    footer .container{
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .first {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+        padding: 0;
+    }
+
+    .first img {
+        padding-bottom: 20px;
+    }
+
+    .first p {
+        padding-block: 20px;
+    }
+
+    .second {
+        max-width: 100%;
+    }
+}
