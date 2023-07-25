@@ -31,9 +31,14 @@ header {
 
 .img1 {
     position: absolute;
-    top: 0;
+    top: -10px;
     width: 100%;
     right: 0;
+    display: block;
+}
+
+.img08 {
+    display: none;
 }
 
 header h1 {
@@ -79,20 +84,27 @@ header .container {
     align-items: center;
     padding-block: 50px;
     padding-top: 90px;
+    max-width: 100%;
 }
 
 .main img {
     margin-left: -40px;
+    max-width: 100%;
 }
 
 .main p {
     padding-top: 20px;
     padding-bottom: 50px;
+    max-width: 100%;
 }
 
 .access {
     text-align: center;
     padding-block: 50px;
+}
+
+.img100 {
+    max-width: 100%;
 }
 
 .access p {
@@ -162,10 +174,8 @@ header .container {
 
 footer {
     background-color: hsla(201, 11%, 66%, 0.2);
-    /* margin-top: 100px; */
-    /* gap: 200px; */
     padding: 90px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .logo {
@@ -178,7 +188,7 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* max-width: 100%; */
+    width: 100%;
 }
 
 footer div p {
@@ -188,7 +198,6 @@ footer div p {
 .first {
     display: flex;
     gap: 50px;
-    
 }
 
 .second {
@@ -197,6 +206,19 @@ footer div p {
 }
 
 @media screen and (max-width:700px) {
+
+    .img1 {
+        display: none;
+    }
+
+    .img08 {
+        display: block;
+        top: -10px;
+        width: 100%;
+        right: 0;
+        position: absolute;
+    }
+
     .container {
         padding-inline: 7vw;
     }
@@ -259,7 +281,7 @@ footer div p {
         max-width: 100%;
     }
 
-    footer .container{
+    footer .container {
         flex-direction: column;
         max-width: 100%;
         padding: 0;
